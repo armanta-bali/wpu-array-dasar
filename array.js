@@ -47,3 +47,29 @@ console.log(CharArray); // ["o", "l", "l", "e", "h"]
 let reversedArray = ["o", "l", "l", "e", "h"];
 let reversedString = reversedArray.join("");
 console.log(reversedString); // "olleh"
+
+// Method forEach
+// function expresion
+let number = [1, 2, 3, 5, 6, 8, 9, 10, 20, 100];
+// number.forEach(function(e) {
+//     console.log(e);
+// })
+
+// arrow function
+number.forEach((element) => {console.log(element);})
+
+// map method
+let num = [1,3,5,7,9];
+let num2 = num.map(function(e) {
+    return e * 2;
+})
+console.log(num2.join(", "));
+
+// mothod sort()
+
+let nomor = [1, 1, 4, 2, 10, 60, 26];
+console.log(nomor.join("-"));
+nomor.sort(function(a,b) {
+    return a-b;
+})
+console.log(nomor.join("-"));
