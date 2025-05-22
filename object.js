@@ -24,3 +24,15 @@ function dataObjectMahasiswa(nama, nrp, email, jurusan) {
 }
 const mhs3 = dataObjectMahasiswa("Ermayanti", "0647382826", "erma@gmail.com", "Sistem informasi");
 console.log(mhs3);
+
+const mhs4 = dataObjectMahasiswa("suryanti", "08828782", "ssuryanti@gmail.com", "teknik teknikan");
+
+//contoh membuat objek dengan function contruction
+// bedanya mengunakan "keyword 'this'" dan "keyword'new"
+function Mahasiswa(nama, nrp, email, jurusan) {
+    this.nama = nama;
+    this.nrp = nrp;
+    this.email = email;
+    this.jurusan = jurusan;
+}
+const mhs5 = new Mahasiswa("erik", "087274847", "erik@gmail.com", "matematika");
