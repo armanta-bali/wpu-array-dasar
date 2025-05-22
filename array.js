@@ -73,3 +73,6 @@ nomor.sort(function(a,b) {
     return a-b;
 })
 console.log(nomor.join("-"));
+
+
+// filler() dan find() akan dilanjut besok
